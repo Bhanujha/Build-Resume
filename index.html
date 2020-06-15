@@ -1,297 +1,387 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Build your Resume</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
 
     <style media="screen">
-        .link:hover {
-            text-decoration: underline;
-            color: black;
-            cursor: pointer;
-        }
+      .link:hover {
+        text-decoration: underline;
+        color: black;
+        cursor: pointer;
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <form id="resume" action method="POST">
-            <h2 id="title">BUILD YOUR RESUME</h2>
+      <form id="resume" action method="POST">
+        <h2 id="title">BUILD YOUR RESUME</h2>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="first_name">First Name:</label>
+        <div>
+          <label for="first_name">First Name:</label>
 
-                <br />
+          <br />
 
-                <input id="first_name" name="user_first_name" type="text" required placeholder="John" />
-            </div>
+          <input
+            id="first_name"
+            name="user_first_name"
+            type="text"
+            required
+            placeholder="John"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="last_name">Last Name:</label>
+        <div>
+          <label for="last_name">Last Name:</label>
 
-                <br />
+          <br />
 
-                <input id="last_name" name="user_last_name" type="text" required placeholder="Doe" />
-            </div>
+          <input
+            id="last_name"
+            name="user_last_name"
+            type="text"
+            required
+            placeholder="Doe"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="address">Address:</label>
+        <div>
+          <label for="address">Address:</label>
 
-                <br />
+          <br />
 
-                <input id="address" name="user_address" type="address" placeholder="Enter Address here" />
-            </div>
+          <input
+            id="address"
+            name="user_address"
+            type="address"
+            placeholder="Enter Address here"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="email">Email:</label>
+        <div>
+          <label for="email">Email:</label>
 
-                <br />
+          <br />
 
-                <input id="email" name="user_email" type="email" placeholder="abc123@gmail.com" />
-            </div>
+          <input
+            id="email"
+            name="user_email"
+            type="email"
+            placeholder="abc123@gmail.com"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="phone-number">Phone Number:</label>
+        <div>
+          <label for="phone-number">Phone Number:</label>
 
-                <br />
+          <br />
 
-                <input id="phone-number" min="0" name="user_phone-number" type="phone" placeholder="type 10 digit no. here" maxlength="10" minlength="10" />
-            </div>
+          <input
+            id="phone-number"
+            min="0"
+            name="user_phone-number"
+            type="phone"
+            placeholder="type 10 digit no. here"
+            maxlength="10"
+            minlength="10"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="gender">Gender:</label>
+        <div>
+          <label for="gender">Gender:</label>
 
-                <br />
+          <br />
 
-                <input id="gender" name="user_gender" type="radio" value="male" /> Male
+          <input id="gender" name="user_gender" type="radio" value="male" />
+          Male
 
-                <br />
+          <br />
 
-                <input id="gender" name="user_gender" type="radio" value="female" /> Female
+          <input id="gender" name="user_gender" type="radio" value="female" />
+          Female
 
-                <br />
+          <br />
 
-                <input id="gender" name="user_gender" type="radio" value="other" /> Other
+          <input id="gender" name="user_gender" type="radio" value="other" />
+          Other
 
-                <br />
-            </div>
+          <br />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="birthday">Date of birth:</label>
+        <div>
+          <label for="birthday">Date of birth:</label>
 
-                <br />
+          <br />
 
-                <input id="birthday" min="0" name="user_birthday" type="date" maxlength="10" minlength="10" placeholder="dd/mm/yyyy" />
-            </div>
+          <input
+            id="birthday"
+            min="0"
+            name="user_birthday"
+            type="date"
+            maxlength="10"
+            minlength="10"
+            placeholder="dd/mm/yyyy"
+          />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="objective">Objective:</label>
+        <div>
+          <label for="objective">Objective:</label>
 
-                <br />
+          <br />
 
-                <textarea id="objective" name="objective" rows="3"> </textarea>
-            </div>
+          <textarea id="objective" name="objective" rows="3"> </textarea>
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="strength">Personal Strength:</label>
+        <div>
+          <label for="strength">Personal Strength:</label>
 
-                <br />
+          <br />
 
-                <textarea id="strength" name="strength" rows="3"> </textarea>
-            </div>
+          <textarea id="strength" name="strength" rows="3"> </textarea>
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <label for="communication">Communication Skill:</label>
+        <div>
+          <label for="communication">Communication Skill:</label>
 
-                <br />
+          <br />
 
-                <textarea id="communication" name="communication" rows="2">
+          <textarea id="communication" name="communication" rows="2">
           </textarea>
-            </div>
+        </div>
 
-            <div>
-                <h3>Educational Qualifications</h3>
-                <button name="button" class="btn btn-secondary" type="button" onclick="newQualification()">
+        <div>
+          <h3>Educational Qualifications</h3>
+          <button
+            name="button"
+            class="btn btn-secondary"
+            type="button"
+            onclick="newQualification()"
+          >
             + Add Qualification
           </button>
-                <section>
-                    <div id="qualifications"></div>
-                </section>
-            </div>
+          <section>
+            <div id="qualifications"></div>
+          </section>
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <h3>Other Qualifications</h3>
-                <button name="button" class="btn btn-secondary" type="button" onclick="newCertification()">
+        <div>
+          <h3>Other Qualifications</h3>
+          <button
+            name="button"
+            class="btn btn-secondary"
+            type="button"
+            onclick="newCertification()"
+          >
             + Add Certification
           </button>
-                <section>
-                    <div id="certificates"></div>
-                </section>
-            </div>
+          <section>
+            <div id="certificates"></div>
+          </section>
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <h4>Independent Courses Completed:</h4>
-                <button name="button" class="btn btn-secondary" type="button" onclick="newCourse()">
+        <div>
+          <h4>Independent Courses Completed:</h4>
+          <button
+            name="button"
+            class="btn btn-secondary"
+            type="button"
+            onclick="newCourse()"
+          >
             + Add Courses
           </button>
-                <br />
-                <br />
-                <div id="courses"></div>
-            </div>
+          <br />
+          <br />
+          <div id="courses"></div>
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <h4>Technical Skills:</h4>
+        <div>
+          <h4>Technical Skills:</h4>
 
-                <label for="">Instrumental Skills:
+          <label for=""
+            >Instrumental Skills:
             <span class="link" onclick="newInstrumentalSkill()"
               >+ Add more</span
             >
           </label>
 
-                <br />
+          <br />
 
-                <div class="instrumental"></div>
-                <input type="text" placeholder="Skill name" class="form-control" />
+          <div class="instrumental"></div>
+          <input type="text" placeholder="Skill name" class="form-control" />
 
-                <br />
+          <br />
 
-                <label for="technical_skills">Programming Skills:</label>
+          <label for="technical_skills">Programming Skills:</label>
 
-                <br />
+          <br />
 
-                <textarea id="technical_skills" name="technical_skills" cols="30" rows="2">
+          <textarea
+            id="technical_skills"
+            name="technical_skills"
+            cols="30"
+            rows="2"
+          >
           </textarea>
 
-                <br />
+          <br />
 
-                <label for="communication">Other Skills:</label>
+          <label for="communication">Other Skills:</label>
 
-                <br />
+          <br />
 
-                <textarea id="technical_skills" name="technical_skills" cols="30" rows="2">
+          <textarea
+            id="technical_skills"
+            name="technical_skills"
+            cols="30"
+            rows="2"
+          >
           </textarea>
-            </div>
+        </div>
 
-            <h4>Awards/Achievements:</h4>
-            <div class="awards">
-                <span class="link" onclick="newAward()">+ Add More</span>
-                <br />
-                <br />
-                <input type="text" class="form-control" name="awards" placeholder="Achievement Details..." />
-                <br />
-            </div>
+        <h4>Awards/Achievements:</h4>
+        <div class="awards">
+          <span class="link" onclick="newAward()">+ Add More</span>
+          <br />
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            name="awards"
+            placeholder="Achievement Details..."
+          />
+          <br />
+        </div>
 
-            <br />
+        <br />
 
-            <div>
-                <h4>Personal Details:</h4>
+        <div>
+          <h4>Personal Details:</h4>
 
-                <label for="about">About:</label>
+          <label for="about">About:</label>
 
-                <br />
+          <br />
 
-                <textarea id="about" name="about" cols="30" rows="1"> </textarea>
+          <textarea id="about" name="about" cols="30" rows="1"> </textarea>
 
-                <br />
+          <br />
 
-                <label for="hobbies">Hobbies:</label>
+          <label for="hobbies">Hobbies:</label>
 
-                <br />
+          <br />
 
-                <textarea id="hobbies" name="hobbies" cols="30" rows="1"> </textarea>
+          <textarea id="hobbies" name="hobbies" cols="30" rows="1"> </textarea>
 
-                <br />
+          <br />
 
-                <label for="language">Languages known:</label>
+          <label for="language">Languages known:</label>
 
-                <br />
+          <br />
 
-                <textarea id="language" name="language" cols="30" rows="1">
+          <textarea id="language" name="language" cols="30" rows="1">
           </textarea>
 
-                <br />
+          <br />
 
-                <label for="competencies">Core Competencies:</label>
+          <label for="competencies">Core Competencies:</label>
 
-                <br />
+          <br />
 
-                <textarea id="competencies" name="competencies" cols="30" rows="1">
+          <textarea id="competencies" name="competencies" cols="30" rows="1">
           </textarea>
-            </div>
+        </div>
 
-            <div>
-                <h3>Professional Experience</h3>
+        <div>
+          <h3>Professional Experience</h3>
 
-                <label for="company">Industrial Experience:
+          <label for="company"
+            >Industrial Experience:
             <span class="link" onclick="newExperience()">+ Add more</span>
           </label>
 
-                <br />
+          <br />
 
-                <div class="experiences">
-                    <input type="text" class="form-control" name="company" placeholder="Work Details..." />
-                    <br />
-                </div>
-            </div>
+          <div class="experiences">
+            <input
+              type="text"
+              class="form-control"
+              name="company"
+              placeholder="Work Details..."
+            />
+            <br />
+          </div>
+        </div>
 
-            <div>
-                <label for="workshop">Workshop's Attended:
+        <div>
+          <label for="workshop"
+            >Workshop's Attended:
             <span class="link" onclick="newWorkShop()">+ Add more</span>
           </label>
 
-                <br />
-                <div class="workshops">
-                    <input type="text" class="form-control" name="workshop" placeholder="Workshop's Details..." />
-                    <br />
-                </div>
-            </div>
+          <br />
+          <div class="workshops">
+            <input
+              type="text"
+              class="form-control"
+              name="workshop"
+              placeholder="Workshop's Details..."
+            />
+            <br />
+          </div>
+        </div>
 
-            <div>
-                <label for="projects">Projects Done:
+        <div>
+          <label for="projects"
+            >Projects Done:
             <span class="link" onclick="newProject()">+ Add more</span>
           </label>
 
-                <br />
-                <div class="projects">
-                    <input type="text" class="form-control" name="project" placeholder="Project's Details, Links to Drive/Dropbox/Github, etc" />
+          <br />
+          <div class="projects">
+            <input
+              type="text"
+              class="form-control"
+              name="project"
+              placeholder="Project's Details, Links to Drive/Dropbox/Github, etc"
+            />
 
-                    <br />
-                </div>
-            </div>
+            <br />
+          </div>
+        </div>
 
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-            <script src="lib/index.js"></script>
-        </form>
+        <script src="lib/index.js"></script>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
